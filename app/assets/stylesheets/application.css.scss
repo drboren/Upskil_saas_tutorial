@@ -13,14 +13,17 @@
  *= require_tree .
  *= require_self
  */
+//import bootstrap
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
- 
+
+//Typography styles
  h1, h2, h3 {
      
      font-family: 'Open Sans', sans-serif;
 }
- 
+
+// Background gradient
 .navbar, .home-callout {
     
 // gradient provide by uigraient.com //
@@ -29,26 +32,16 @@
     background: linear-gradient(to left, #ee9ca7 , #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             
 }
+// Navigation Styles
 .navbar { 
     border: none;}
     
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .nabar-default .navbar-nav li a {
     color:white;
+ & :hover { color:white ; opacity: 0.6; 
 }
-
-.nabar-default .navbar-nav li a {
-    color:yellow;
 }
-
-.navbar-default .navbar-brand:hover {
-    color:white;
-    opacity:0.5;
-}
-.navbar-default .navbar-nav li a:hover {
-    color:white;
-    opacity:0.75;
-}
-    
+// Home Styles
 .home-callout {
   color: white;
   margin-top: -20px;
